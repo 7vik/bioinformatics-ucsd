@@ -73,7 +73,9 @@ def number_to_pattern(index, k, acc):
     return number_to_pattern(index//4, k, 'ACGT'[index % 4]+acc)
 
 if __name__ == "__main__":
-    f = open('data8.txt', 'r')
-    t = f.readline().strip()
+    # f = open('data8.txt', 'r')
+    # t = f.readline().strip()
     # t = 'ACGTTGCATGTCGCATGATGCATGAGAGCT'
-    freq_words_mismatch(t, 7, 3)
+    # freq_words_mismatch(t, 7, 3)
+    # print(approx_pattern_count('TACGCATTACAAAGCACA', 'AA', 1))
+    print(len(neighbors('ACGT', 3, set())))

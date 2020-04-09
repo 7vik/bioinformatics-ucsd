@@ -16,8 +16,9 @@ def pat_match(pattern, genome, d):
     return ls
 
 if __name__ == "__main__":
-    f = open('data4.txt', 'r')
-    p = f.readline().strip('\n')
-    g = f.readline().strip('\n')
-    d = int(f.readline().strip('\n'))
-    print(len(pat_match(p,g,d)))
+    # f = open('data4.txt', 'r')
+    # p = f.readline().strip('\n')
+    # g = f.readline().strip('\n')
+    # d = int(f.readline().strip('\n'))
+    # print(len(pat_match(p,g,d)))
+    print(hamming('TGACCCGTTATGCTCGAGTTCGGTCAGAGCGTCATTGCGAGTAGTCGTTTGCTTTCTCAAACTCC', 'GAGCGATTAAGCGTGACAGCCCCAGGGAACCCACAAAACGTGATCGCAGTCCATCCGATCATACA'))

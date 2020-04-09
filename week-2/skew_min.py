@@ -15,7 +15,12 @@ def skew_min(genome):
     sk = np.array(skew(genome))
     return np.where(sk == sk.min())[0].tolist()
 
+def skew_max(genome):
+    sk = np.array(skew(genome))
+    return np.where(sk == sk.max())[0].tolist()
+
 if __name__ == "__main__":
-    f = open('data1.txt', 'r')
-    t = f.readline()
-    print(skew_min(t))
+    # f = open('data1.txt', 'r')
+    # t = f.readline()
+    # print(skew_min(t))
+    print(skew_max('GCATACACTTCCCAGTAGGTACTG'))
